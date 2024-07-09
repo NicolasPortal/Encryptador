@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" type="image/svg+xml" href="./assets/page-icon.svg">
+  <title>Encriptador</title>
+</head>
+
+<body>
+  <div class="main">
+
+
+    <section class="input-section">
+      <header class="header">
+        <img class="logo" src="./assets/Logo.svg" alt="logo">
+        <div>
+      </header>
+      <div class="text-area-container">
+        <!-- cuadro de texto -->
+        <textarea class="text-area" id="text-area" placeholder="Ingrese aqui su texto" autofocus
+          oninput="validarTexto()"></textarea>
+        <!-- botones de accion -->
+        <div>
+          <div class="parrafo-botones" id="parrafo-botones">
+            <img class=" icono-alerta" src="./assets/iconoAlerta.svg" alt="Icono-alerta">
+            <p>Solo letras minúsculas y sin acentos</p>
+          </div>
+          <div class="button-container">
+            <button class="button dark-blue-color" id="btn-encrypt" onclick="encriptarTexto()">Encriptar</button>
+            <button class="button grey-color" id="btn-decrypt" onclick="desencriptarTexto()">Desencriptar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="output-section-vacia" id="output-section-vacia">
+      <!-- svg muñeco -->
+      <img class="muñeco" src="./assets/Muñeco.svg" alt="Muñeco">
+      <h1 class="titulo-otput">Ningún mensaje fue encontrado</h1>
+      <p class="parrafo-output">Ingresa el texto que desees encriptar o desencriptar.</p>
+    </section>
+
+    <section class="output-section ocultar" id="output-section">
+      <div class="output-text" id="output-text"></div>
+      <button class="button white-button" onclick="copiarTexto()">Copiar</button>
+    </section>
+
+    <!-- fin del main container -->
+  </div>
+
+  <footer>
+    <p> Hecho por Nicolas Portal</p>
+  </footer>
+
+
+  <script src="./main.js"></script>
+  <script src="./utils/copiarTexto.js"></script>
+  <script src="./utils/desencriptar.js"></script>
+  <script src="./utils/encriptar.js"></script>
+  <script src="./utils/validarTexto.js"></script>
+</body>
+
+</html>
