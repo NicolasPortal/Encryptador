@@ -17,3 +17,5 @@ function copiarTexto() {
   // Deseleccionar el texto después de copiar
   textoSeleccionado.removeAllRanges();
 }
+
+export { copiarTexto }

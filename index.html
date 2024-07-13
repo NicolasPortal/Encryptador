@@ -20,8 +20,7 @@
       </header>
       <div class="text-area-container">
         <!-- cuadro de texto -->
-        <textarea class="text-area" id="text-area" placeholder="Ingrese aqui su texto" autofocus
-          oninput="validarTexto()"></textarea>
+        <textarea class="text-area" id="text-area" placeholder="Ingrese aqui su texto" autofocus></textarea>
         <!-- botones de accion -->
         <div>
           <div class="parrafo-botones" id="parrafo-botones">
@@ -29,8 +28,8 @@
             <p>Solo letras minúsculas y sin acentos</p>
           </div>
           <div class="button-container">
-            <button class="button dark-blue-color" id="btn-encrypt" onclick="encriptarTexto()">Encriptar</button>
-            <button class="button grey-color" id="btn-decrypt" onclick="desencriptarTexto()">Desencriptar</button>
+            <button class="button dark-blue-color" id="btn-encriptado">Encriptar</button>
+            <button class="button grey-color" id="btn-desencriptado">Desencriptar</button>
           </div>
         </div>
       </div>
@@ -46,7 +45,7 @@
 
     <section class="output-section ocultar" id="output-section">
       <div class="output-text" id="output-text"></div>
-      <button class="button white-button" onclick="copiarTexto()">Copiar</button>
+      <button class="button white-button" id="btn-copiar">Copiar</button>
     </section>
 
     <!-- fin del main container -->
@@ -57,11 +56,7 @@
   </footer>
 
 
-  <script src="./main.js"></script>
-  <script src="./utils/copiarTexto.js"></script>
-  <script src="./utils/desencriptar.js"></script>
-  <script src="./utils/encriptar.js"></script>
-  <script src="./utils/validarTexto.js"></script>
+  <script src="./main.js" type="module"></script>
 </body>
 
 </html>
