@@ -18,7 +18,7 @@ Este proyecto proporciona una herramienta simple para encriptar y desencriptar t
 
 ### Encriptación
 
-Para encriptar una palabra, simplemente reemplace cada letra según las reglas establecidas:
+Para encriptar una palabra, se reemplaza cada letra según las reglas establecidas:
 
 Ejemplo:
 Entrada: "gato"
@@ -26,7 +26,7 @@ Salida: "gaitober"
 
 ### Desencriptación
 
-Para desencriptar una palabra, aplique las reglas en reversa:
+Para desencriptar una palabra, se aplican las reglas en reversa:
 
 Ejemplo:
 Entrada: "gaitober"
