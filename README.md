@@ -24,9 +24,6 @@ Ejemplo:
 Entrada: "gato"
 Salida: "gaitober"
 
-yaml
-Copiar código
-
 ### Desencriptación
 
 Para desencriptar una palabra, aplique las reglas en reversa:
